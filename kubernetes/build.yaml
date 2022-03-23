@@ -12,39 +12,39 @@ metadata:
       fieldsV1:
         'f:metadata':
           'f:labels':
-            .: {}
-            'f:app': {}
+            .: { }
+            'f:app': { }
         'f:spec':
-          'f:progressDeadlineSeconds': {}
-          'f:replicas': {}
-          'f:revisionHistoryLimit': {}
-          'f:selector': {}
+          'f:progressDeadlineSeconds': { }
+          'f:replicas': { }
+          'f:revisionHistoryLimit': { }
+          'f:selector': { }
           'f:strategy':
             'f:rollingUpdate':
-              .: {}
-              'f:maxSurge': {}
-              'f:maxUnavailable': {}
-            'f:type': {}
+              .: { }
+              'f:maxSurge': { }
+              'f:maxUnavailable': { }
+            'f:type': { }
           'f:template':
             'f:metadata':
               'f:labels':
-                .: {}
-                'f:app': {}
+                .: { }
+                'f:app': { }
             'f:spec':
               'f:containers':
                 'k:{"name":"example-bangkit-sans-1"}':
-                  .: {}
-                  'f:image': {}
-                  'f:imagePullPolicy': {}
-                  'f:name': {}
-                  'f:resources': {}
-                  'f:terminationMessagePath': {}
-                  'f:terminationMessagePolicy': {}
-              'f:dnsPolicy': {}
-              'f:restartPolicy': {}
-              'f:schedulerName': {}
-              'f:securityContext': {}
-              'f:terminationGracePeriodSeconds': {}
+                  .: { }
+                  'f:image': { }
+                  'f:imagePullPolicy': { }
+                  'f:name': { }
+                  'f:resources': { }
+                  'f:terminationMessagePath': { }
+                  'f:terminationMessagePolicy': { }
+              'f:dnsPolicy': { }
+              'f:restartPolicy': { }
+              'f:schedulerName': { }
+              'f:securityContext': { }
+              'f:terminationGracePeriodSeconds': { }
       manager: GoogleCloudConsole
       operation: Update
       time: '2022-03-23T07:31:32Z'
@@ -53,39 +53,39 @@ metadata:
       fieldsV1:
         'f:metadata':
           'f:annotations':
-            'f:deployment.kubernetes.io/revision': {}
+            'f:deployment.kubernetes.io/revision': { }
         'f:status':
-          'f:availableReplicas': {}
+          'f:availableReplicas': { }
           'f:conditions':
-            .: {}
+            .: { }
             'k:{"type":"Available"}':
-              .: {}
-              'f:lastTransitionTime': {}
-              'f:lastUpdateTime': {}
-              'f:message': {}
-              'f:reason': {}
-              'f:status': {}
-              'f:type': {}
+              .: { }
+              'f:lastTransitionTime': { }
+              'f:lastUpdateTime': { }
+              'f:message': { }
+              'f:reason': { }
+              'f:status': { }
+              'f:type': { }
             'k:{"type":"Progressing"}':
-              .: {}
-              'f:lastTransitionTime': {}
-              'f:lastUpdateTime': {}
-              'f:message': {}
-              'f:reason': {}
-              'f:status': {}
-              'f:type': {}
-          'f:observedGeneration': {}
-          'f:readyReplicas': {}
-          'f:replicas': {}
-          'f:unavailableReplicas': {}
-          'f:updatedReplicas': {}
+              .: { }
+              'f:lastTransitionTime': { }
+              'f:lastUpdateTime': { }
+              'f:message': { }
+              'f:reason': { }
+              'f:status': { }
+              'f:type': { }
+          'f:observedGeneration': { }
+          'f:readyReplicas': { }
+          'f:replicas': { }
+          'f:unavailableReplicas': { }
+          'f:updatedReplicas': { }
       manager: kube-controller-manager
       operation: Update
       time: '2022-03-23T07:32:12Z'
   name: example-frontend
   namespace: default
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: example-frontend
@@ -105,13 +105,13 @@ spec:
           name: example-bangkit-sans-1
           resources:
             limits:
-              cpu: 500m
+              cpu: 256m
               ephemeral-storage: 1Gi
-              memory: 2Gi
+              memory: 512mi
             requests:
-              cpu: 500m
+              cpu: 128m
               ephemeral-storage: 1Gi
-              memory: 2Gi
+              memory: 256mi
           securityContext:
             capabilities:
               drop:
@@ -131,16 +131,16 @@ metadata:
       fieldsV1:
         'f:metadata':
           'f:labels':
-            .: {}
-            'f:app': {}
+            .: { }
+            'f:app': { }
         'f:spec':
-          'f:maxReplicas': {}
-          'f:metrics': {}
-          'f:minReplicas': {}
+          'f:maxReplicas': { }
+          'f:metrics': { }
+          'f:minReplicas': { }
           'f:scaleTargetRef':
-            'f:apiVersion': {}
-            'f:kind': {}
-            'f:name': {}
+            'f:apiVersion': { }
+            'f:kind': { }
+            'f:name': { }
       manager: GoogleCloudConsole
       operation: Update
       time: '2022-03-23T07:31:33Z'
@@ -149,13 +149,13 @@ metadata:
       fieldsV1:
         'f:metadata':
           'f:annotations':
-            .: {}
-            'f:autoscaling.alpha.kubernetes.io/conditions': {}
-            'f:autoscaling.alpha.kubernetes.io/current-metrics': {}
+            .: { }
+            'f:autoscaling.alpha.kubernetes.io/conditions': { }
+            'f:autoscaling.alpha.kubernetes.io/current-metrics': { }
         'f:status':
-          'f:currentCPUUtilizationPercentage': {}
-          'f:currentReplicas': {}
-          'f:desiredReplicas': {}
+          'f:currentCPUUtilizationPercentage': { }
+          'f:currentReplicas': { }
+          'f:desiredReplicas': { }
       manager: vpa-recommender
       operation: Update
       time: '2022-03-23T07:33:09Z'
