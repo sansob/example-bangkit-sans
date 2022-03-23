@@ -105,13 +105,13 @@ spec:
           name: example-bangkit-sans-1
           resources:
             limits:
-              cpu: 500m
+              cpu: 300m
               ephemeral-storage: 1Gi
-              memory: 1Gi
+              memory: 256Mi
             requests:
-              cpu: 500m
+              cpu: 200m
               ephemeral-storage: 1Gi
-              memory: 1Gi
+              memory: 128Mi
           securityContext:
             capabilities:
               drop:
